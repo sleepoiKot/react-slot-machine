@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+}
+
+.App-Slot {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.App-Slot img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.App-Slot-1 {
+  height: 120px;
+  width: 120px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 1px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.App-Slot-2 {
+  height: 120px;
+  width: 120px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 1px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+
+.App-Slot-3 {
+  height: 120px;
+  width: 120px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 1px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.App-Slot-Button {
+  display: inline-block;
+  border-radius: 14px;
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.App-Slot-Button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.App-Slot-Button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.App-Slot-Button:hover span {
+  padding-right: 25px;
+}
+
+.App-Slot-Button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.App-Slot-Button-disabled {
+  display: inline-block;
+  border-radius: 14px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.App-Jackpot img{
+  animation: glow 0.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    width: 10%;
+    height: 10%;
+  }
+  to {
+    width: 20%;
+    height: 20%;
+  }
+}
